@@ -53,9 +53,9 @@ package
 	[SWF(width='1024', height='768', backgroundColor='#666666', frameRate='60')]
 	public class Main extends Sprite
 	{	
-		[Embed(source='../res/lee_normal.png')]
+		[Embed(source='../res/lee_perry_normal.jpg')]
 		private var LeeNormal:Class;
-		[Embed(source='../res/lee_diffuse.png')]
+		[Embed(source='../res/lee_perry_diffuse.jpg')]
 		private var LeeDiffuse:Class;
 		
 		private var _viewport 	: Viewport3D;
