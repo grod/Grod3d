@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Grod3D</title>
+	<script type="text/javascript" src="js/swfobject.js"></script>
+	<style>
+		html
+		{
+			width:100%;
+			height:100%;
+		}
+		body
+		{
+			margin:0;
+		}
+		#flash_div
+		{
+			width:100%;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="flash_div"> 
+		<div id="flash_content">
+			<div id="noflash">
+				No flash
+			</div>
+		</div>
+	</div>
+	  
+	
+	<script type="text/javascript">
+		var shareId;
+		var attributes = {};
+		var flashvars = {};
+		var params = {wmode:"direct"};
+		params.scale =  "noscale";
+		params.allowFullScreen = "true";
+		params.allowScriptAccess = "sameDomain";
+		swfobject.embedSWF("./src/Main.swf", "flash_content", "100%", "100%", "11","", flashvars, params, attributes);
+	</script>
+</body>
+</html>
