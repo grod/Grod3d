@@ -1,6 +1,6 @@
 <flex-config>
 	<swf-version>13</swf-version>
-	<target-player>11.0.0</target-player>
+	<target-player>11</target-player>
 	<benchmark>false</benchmark>
 	<default-background-color>#FFFFFF</default-background-color>
 	<static-link-runtime-shared-libraries>true</static-link-runtime-shared-libraries>
