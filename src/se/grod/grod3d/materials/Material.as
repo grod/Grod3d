@@ -18,13 +18,13 @@ package se.grod.grod3d.materials
     import flash.display3D.Context3DProgramType;
     import flash.display3D.Program3D;
 	import flash.display3D.textures.Texture;
+	import flash.display3D.Context3D;
 	import flash.utils.ByteArray;
+	import flash.display.BitmapData;
+	
 	import se.grod.grod3d.core.objects.Mesh;
 	import se.grod.grod3d.cameras.Camera3D;
-	import flash.display3D.Context3D;
-	import flash.geom.Vector3D;
 	import se.grod.grod3d.lights.Light;
-	import flash.display.BitmapData;
 	
 	public class Material
 	{

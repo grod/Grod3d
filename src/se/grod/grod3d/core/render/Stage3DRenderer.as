@@ -13,33 +13,22 @@
 
 package se.grod.grod3d.core.render
 {	
+	import flash.events.Event;
+	
 	import se.grod.grod3d.core.render.Renderer;
 	import se.grod.grod3d.core.objects.Object3D;
 	import se.grod.grod3d.core.objects.Mesh;
-	import flash.display.Stage;
-	import flash.display.Stage3D;
-	import flash.display3D.Context3D;
-	import flash.display3D.VertexBuffer3D;
-	import flash.display3D.IndexBuffer3D;
-	import flash.display3D.Context3DProgramType;
-	import flash.display3D.Context3DVertexBufferFormat;
-	import flash.display3D.Program3D;
-	import flash.display3D.Context3DTriangleFace;
-	import flash.display3D.Context3DBlendFactor;
-	import flash.display3D.Context3DCompareMode;
-	import flash.events.Event;
 	import se.grod.grod3d.core.Viewport3D;
 	import se.grod.grod3d.core.Scene3D;
 	import se.grod.grod3d.cameras.Camera3D;
-	import se.grod.grod3d.core.base.Geometry;
-	import com.adobe.utils.AGALMiniAssembler;
-	import flash.geom.Vector3D;
-	import flash.geom.Matrix3D;
-	import flash.utils.getTimer;
-	import com.adobe.utils.PerspectiveMatrix3D;
-	import flash.display.BitmapData;
 	import se.grod.grod3d.materials.Material;
 	import se.grod.grod3d.lights.Light;
+	
+	import flash.display.Stage;
+	import flash.display.Stage3D;
+	import flash.display3D.Context3D;
+	import flash.display3D.Program3D;
+	import flash.display3D.Context3DTriangleFace;
 	
 	public class Stage3DRenderer extends Renderer
 	{

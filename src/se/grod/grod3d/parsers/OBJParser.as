@@ -14,12 +14,7 @@
 package se.grod.grod3d.parsers
 {	
 	import se.grod.grod3d.core.base.Geometry;
-	import se.grod.grod3d.parsers.Parser;
-	import se.grod.grod3d.core.base.data.Vertex;
-	import se.grod.grod3d.core.base.data.UV;
-	import se.grod.grod3d.core.base.data.Face;
 	import se.grod.grod3d.core.objects.Mesh;
-	import flash.geom.Vector3D;
 	
 	public class OBJParser extends Mesh
 	{

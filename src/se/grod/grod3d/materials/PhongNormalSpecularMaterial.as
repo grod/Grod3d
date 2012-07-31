@@ -16,6 +16,9 @@ package se.grod.grod3d.materials
 	import se.grod.grod3d.materials.Material;
 	import se.grod.grod3d.core.objects.Mesh;
 	import se.grod.grod3d.cameras.Camera3D;
+	import se.grod.grod3d.core.base.Geometry;
+	import se.grod.grod3d.utils.ColorUtils;
+	
 	import flash.display3D.Context3DProgramType;
 	import flash.display3D.Program3D;
 	import flash.display3D.Context3D;
@@ -24,13 +27,11 @@ package se.grod.grod3d.materials
 	import flash.display3D.IndexBuffer3D;
 	import flash.display3D.Context3DTextureFormat;
 	import flash.display3D.textures.Texture;
-	import com.adobe.utils.AGALMiniAssembler;
 	import flash.geom.Matrix3D;
-	import flash.geom.Vector3D;
-	import com.adobe.utils.PerspectiveMatrix3D;
-	import se.grod.grod3d.core.base.Geometry;
-	import se.grod.grod3d.utils.ColorUtils;
 	import flash.display.BitmapData;
+	
+	import com.adobe.utils.AGALMiniAssembler;
+	import com.adobe.utils.PerspectiveMatrix3D;
 	
 	public class PhongNormalSpecularMaterial extends Material
 	{

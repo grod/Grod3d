@@ -14,41 +14,29 @@
 package
 {		
 	import com.nesium.logging.TrazzleLogger;
-	import com.nesium.logging.TrazzleTarget;
 
+	import se.grod.grod3d.core.objects.Object3D;
 	import se.grod.grod3d.core.Viewport3D;
 	import se.grod.grod3d.core.render.Stage3DRenderer;
 	import se.grod.grod3d.core.Scene3D;
-	import se.grod.grod3d.core.objects.Mesh;
 	import se.grod.grod3d.cameras.Camera3D;
 	import se.grod.grod3d.parsers.OBJParser;
+	import se.grod.grod3d.primitives.Sphere;
+	import se.grod.grod3d.materials.Material;
+	import se.grod.grod3d.core.render.Renderer;
+	import se.grod.grod3d.materials.PhongTextureMaterial;
+	import se.grod.grod3d.textures.TextureUtils;
+	import se.grod.grod3d.lights.PointLight;
 	
-	import flash.display.Stage3D;
-	import flash.geom.Vector3D;
-	
-	import flash.display.Sprite;
 	import flash.net.URLLoader;
 	import flash.events.Event;
 	import flash.net.URLRequest;
-	import se.grod.grod3d.core.render.Renderer;
-	import se.grod.grod3d.materials.GouradColorMaterial;
-	import se.grod.grod3d.materials.NormalMaterial;
-	import se.grod.grod3d.materials.PhongColorMaterial;
-	import se.grod.grod3d.materials.PhongTextureMaterial;
-	import flash.display.BitmapData;
-	import se.grod.grod3d.textures.TextureUtils;
+	
+	import flash.display.Sprite;
 	import flash.display.Bitmap;
-	import se.grod.grod3d.primitives.Sphere;
-	import se.grod.grod3d.primitives.Cube;
-	import se.grod.grod3d.core.math.MathConstants;
-	import se.grod.grod3d.primitives.Plane;
-	import se.grod.grod3d.materials.Material;
-	import se.grod.grod3d.core.objects.Object3D;
 	import flash.display.StageScaleMode;
 	import flash.display.StageAlign;
-	import se.grod.grod3d.lights.PointLight;
-	import se.grod.grod3d.materials.BitmapMaterial;
-	import se.grod.grod3d.core.render.DeferredRenderer;
+	
 	
 	[SWF(width='1024', height='768', backgroundColor='#666666', frameRate='60')]
 	public class Main extends Sprite
@@ -93,7 +81,7 @@ package
 			_objs = new Array();
 			
 			log("i Model loaded. Parsing...");
-			var obj:OBJParser = new OBJParser( 5, true);
+			var obj:OBJParser = new OBJParser( 10, true);
 			obj.build(  String(e.target.data) );
 			obj.x = 0;
 			obj.z = 50;
@@ -139,13 +127,6 @@ package
 			_scene.addLight(lght2);
 			var lght3:PointLight = new PointLight(0x6708FE, 0, 400, -230);
 			_scene.addLight(lght3);
-			
-			// Skybox
-			/*var skyboxMaterial : Material = new PhongTextureMaterial( TextureUtils.getCheckerBoard(), Bitmap(new MetalNormal()).bitmapData );
-			skyboxMaterial.doubleSided = true;
-			var skybox:Cube = new Cube(  skyboxMaterial, 1000, 1000, 1000, true);
-			skybox.z = 40;
-			_scene.addChild(skybox);*/
 			
 			_viewport.initialize( _scene, _camera, _renderer );
 			

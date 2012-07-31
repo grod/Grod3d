@@ -15,6 +15,7 @@ package se.grod.grod3d.parsers
 {	
 	import se.grod.grod3d.core.base.Geometry;
 	import se.grod.grod3d.core.objects.Mesh;
+	
 	public class Parser
 	{
 

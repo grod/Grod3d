@@ -13,7 +13,6 @@
 
 package se.grod.grod3d.core
 {	
-	import se.grod.grod3d.core.objects.Object3D;
 	import se.grod.grod3d.core.objects.ObjectContainer3D;
 	import se.grod.grod3d.lights.Light;
 	

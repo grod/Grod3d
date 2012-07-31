@@ -1,22 +1,21 @@
 package se.grod.grod3d.core.render
 {	
-	import se.grod.grod3d.core.render.Renderer;
 	import se.grod.grod3d.core.Scene3D;
-	import se.grod.grod3d.cameras.Camera3D;
+	import se.grod.grod3d.core.render.modules.NormalRenderer;
+	import se.grod.grod3d.core.render.modules.LightRenderer;
 	import se.grod.grod3d.core.render.Stage3DRenderer;
 	import se.grod.grod3d.core.objects.Object3D;
 	import se.grod.grod3d.core.objects.Mesh;
 	import se.grod.grod3d.core.render.modules.DepthRenderer;
 	import se.grod.grod3d.core.render.modules.DiffuseRenderer;
 	import se.grod.grod3d.core.Viewport3D;
+	import se.grod.grod3d.cameras.Camera3D;
 	import se.grod.grod3d.lights.Light;
 	
 	import flash.display3D.Context3DTriangleFace;
 	import flash.display3D.Context3DTextureFormat;
 	import flash.display3D.Context3DBlendFactor;
 	import flash.display3D.textures.Texture;
-	import se.grod.grod3d.core.render.modules.NormalRenderer;
-	import se.grod.grod3d.core.render.modules.LightRenderer;
 	
 	public class DeferredRenderer extends Stage3DRenderer
 	{
@@ -90,19 +89,11 @@ package se.grod.grod3d.core.render
 			for (var j : int = 0; j < lights.length; j++)
 			{
 				_context3D.setRenderToBackBuffer();
-				//if (j == lights.length-1)
-				
-				//else
-				
-				
-				
 				_context3D.clear(.1,.1,.1,1);
 				_context3D.setBlendFactors(Context3DBlendFactor.ONE, Context3DBlendFactor.ZERO);
 				if (j > 0)
 					_context3D.setBlendFactors(Context3DBlendFactor.ONE, Context3DBlendFactor.ONE);
 				renderLights(scene, camera, lights[j]);
-				
-				
 				
 				//else
 				//	_context3D.setBlendFactors(Context3DBlendFactor.ONE, Context3DBlendFactor.ZERO);

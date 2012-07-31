@@ -1,24 +1,17 @@
 package se.grod.grod3d.core.render.modules
 {	
-	import flash.events.EventDispatcher;
 	import se.grod.grod3d.core.objects.Mesh;
 	import se.grod.grod3d.core.Scene3D;
 	import se.grod.grod3d.cameras.Camera3D;
 	import se.grod.grod3d.core.base.Geometry;
 	
+	import flash.events.EventDispatcher;
+	import flash.geom.Matrix3D;
 	import flash.display3D.Context3DProgramType;
 	import flash.display3D.Program3D;
 	import flash.display3D.Context3D;
 	import flash.display3D.Context3DVertexBufferFormat;
-	import flash.display3D.VertexBuffer3D;
-	import flash.display3D.IndexBuffer3D;
-	import flash.display3D.Context3DTextureFormat;
-	import flash.display3D.textures.Texture;
-	import flash.display3D.Context3DBlendFactor;
-	import flash.display3D.Context3DCompareMode;
 	import com.adobe.utils.AGALMiniAssembler;
-	import flash.geom.Matrix3D;
-	import flash.geom.Vector3D;
 	
 	public class DepthRenderer extends EventDispatcher
 	{

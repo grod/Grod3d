@@ -13,7 +13,6 @@
 
 package se.grod.grod3d.core
 {	
-	import flash.events.Event;
 	import flash.display.Sprite;
 	import se.grod.grod3d.cameras.Camera3D;
 	import se.grod.grod3d.core.Scene3D;
@@ -57,9 +56,6 @@ package se.grod.grod3d.core
 		{
 			// apply any changed items...
 			initialize( scene, camera, renderer );
-			
-			// check for required objects
-			//if( !(_scene && _camera && renderer) ) return false;
 			
 			// render
 			_renderer.draw( scene, camera );

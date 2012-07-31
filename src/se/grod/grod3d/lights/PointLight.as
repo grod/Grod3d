@@ -14,6 +14,7 @@
 package se.grod.grod3d.lights
 {	
 	import se.grod.grod3d.lights.Light;
+	
 	public class PointLight extends Light
 	{
 		public function PointLight(color:uint = 0xFFFFFF, x:Number = 0, y:Number = 0, z:Number = 0) : void

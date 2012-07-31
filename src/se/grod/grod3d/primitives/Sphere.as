@@ -17,6 +17,7 @@ package se.grod.grod3d.primitives
 	import se.grod.grod3d.core.math.MathConstants;
 	import se.grod.grod3d.materials.Material;
 	import se.grod.grod3d.core.base.Geometry;
+	
 	public class Sphere extends Mesh
 	{
 		protected var _radius : Number;
